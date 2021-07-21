@@ -1,9 +1,12 @@
-import { map } from "./map";
+import { map } from './map';
 
 describe('map', () => {
-  it('takes an array and invokes the passed in callback function for each element in passed in array', () => {
+  it('grabs an array, creates a new array with an implemented callback', () => {
     const originalArray = [1, 2, 3, 4, 5];
     const callback = (item) => item * 2;
-    const result = map(originalArray, callback);
+    const actual = map(originalArray, callback);
+    const expected = [2, 4, 6, 8, 10];
+
+    expect(actual).toEqual(expected);
   });
 });

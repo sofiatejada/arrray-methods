@@ -6,6 +6,7 @@ export const map = (arr, callback) => {
     const item = arr[index];
     //THIS DOWN HERE DOES THE SAME THING AS PUSH
     newArr[index] = callback(item);
+    //THOSE TWO DO THE SAME THING, PICK ONE
     newArr[index] = item;
     // newArr.push(item);
       
