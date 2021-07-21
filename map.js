@@ -10,7 +10,6 @@ export const map = (arr, callback) => {
     // newArr at [index], will be set to the new evaluation of the next callback(item)
     newArr[index] = callback(item);
     //THOSE TWO DO THE SAME THING, PICK ONE
-    newArr[index] = item;
     // newArr.push(item);
       
   }
