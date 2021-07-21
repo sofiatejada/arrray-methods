@@ -3,8 +3,9 @@ export const filter = (arr, callback) => {
 
   for (let index = 0; index < arr.length; index++) {
     const item = arr[index];
-    
-    newArr[index] = callback(item);
+
+    if(callback(item))
+      newArr[index] = callback(item);
       
   }
   return newArr;
