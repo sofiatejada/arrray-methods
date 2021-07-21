@@ -8,4 +8,5 @@ export const findIndex = (arr, callback) => {
       newArr[index] = index;
     }
   }
+  return newArr;
 };
