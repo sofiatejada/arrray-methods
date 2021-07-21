@@ -3,7 +3,6 @@ export const findIndex = (arr, callback) => {
 
   for (let index = 0; index < arr.length; index++) {
     const item = callback(arr[index]);
-    console.log(item);
     if(item) {
       newArr = [...newArr, index];
     }
