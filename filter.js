@@ -1,12 +1,11 @@
 export const filter = (arr, callback) => {
-  const newArr = [];
+  let newArr = [];
 
   for (let index = 0; index < arr.length; index++) {
-    const item = arr[index];
-
-    if(callback(item))
-      newArr[index] = callback(item);
-      
+    const item = callback(index);
+    if(item === true) {
+      newArr = [...newArr, item];
+    }
   }
   return newArr;
 };
