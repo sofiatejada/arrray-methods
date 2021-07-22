@@ -1,19 +1,10 @@
-export const reduce = (arr, callback, initialValue) => {
-//   let acc = initialValue === undefined ? 0 : initialValue;
-//   for (let index = 0; index < arr.length; index++) {
-//     const element = arr[index];
-//     if(element) {
-//       acc = callback(acc, element);
-//     }
-    
-  //   }
-  const acc = initialValue;
-
+export const reduce = (arr, callback) => {
+  let acc = 0;
   for (let index = 0; index < arr.length; index++) {
-    const element = arr[index];
-      
+    const item = arr[index];
+    if(item) {
+      acc = callback(acc, item);
+    }
   }
-
-
   return acc;
 };
