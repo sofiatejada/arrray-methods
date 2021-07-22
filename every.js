@@ -1,8 +1,9 @@
 export const every = (arr, callback) => {
   for (let index = 0; index < arr.length; index++) {
-    const item = arr[index];
+    let newArr = [];
+    const item = callback(arr[index]);
     if(item) {
-      return true;
+      newArr = [...newArr, arr[index]];
     } else {
       return false;
     }

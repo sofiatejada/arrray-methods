@@ -9,4 +9,3 @@ export const filter = (arr, callback) => {
   }
   return newArr;
 };
-
