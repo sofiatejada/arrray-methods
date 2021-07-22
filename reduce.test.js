@@ -2,10 +2,10 @@ import { reduce } from './reduce';
 
 describe('reduce', () => {
   it('does lots of stuff i guess, i don\'t get it yet', () => {
-    const originalArray = [2, 18, 25, 1, 36, 217, 3, 21, 24];
-    const callback = (acc, item) => {};
-    const actual = reduce(originalArray, callback, 0);
-    const expected = [];
+    const originalArray = [1, 2, 3];
+    const callback = (acc, item) => acc + item;
+    const actual = reduce(originalArray, callback);
+    const expected = 6;
 
     expect(actual).toEqual(expected);
   });
