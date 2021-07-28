@@ -1,11 +1,10 @@
 export const findIndex = (arr, callback) => {
-  let newArr = [];
+  // let newArr = [];
 
   for (let index = 0; index < arr.length; index++) {
     const item = callback(arr[index]);
     if(item) {
-      newArr = [...newArr, index];
+      return [index];
     }
   }
-  return newArr;
 };
